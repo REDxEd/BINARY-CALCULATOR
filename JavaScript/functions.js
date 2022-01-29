@@ -4,7 +4,8 @@ if (index == 0){
         document.getElementById("1").focus();
 }
 
-        
+// this is the function that will be called for change the cursor to the next input box
+// it was one of the requirements of the exercise        
 function jump(input,index){
     if(input!=''){
         if (index == 1){
@@ -34,7 +35,7 @@ function jump(input,index){
         }
     }
 }
-
+//there is probably a better way to do it. but this is the way I found it.
 function dec(){
     var output = (document.getElementById("1").value*1)+(document.getElementById("2").value*2)+(document.getElementById("3").value*4)+(document.getElementById("4").value*8)+(document.getElementById("5").value*16)+(document.getElementById("6").value*32)+(document.getElementById("7").value*64)+(document.getElementById("8").value*128);
     
@@ -59,5 +60,5 @@ function hex(){
     var output = output.toString(16);
 
     document.getElementById("output").innerHTML = output;
-    document.getElementById("button").innerHTML = "OCT";
+    document.getElementById("button").innerHTML = "HEX";
 }
